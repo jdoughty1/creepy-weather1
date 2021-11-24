@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+
+    <script src="https://kit.fontawesome.com/b327b97757.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="src/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <title>Document</title>
+</head>
+
+<body class="color">
+    <div class="container">
+        <div class="creepy-weather">
+            <form class="creepy-search" id="creepy-search">
+                <div class="row">
+                    <div class="col-9" search>
+                        <input type="search" id="city-input" autocomplete="off" placeholder="City Name"
+                            class="form-control" />
+                    </div>
+
+                    <div class="col-3" submit>
+                        <input type="submit" value="search" class="form-control btn btn-primary" />
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <h1 id="city">
+        <div id="temperature"></div>
+
+        Denver
+    </h1>
+
+    <p class="date" id="date"></p>
+
+    <h2>
+        <div class="weather">
+            <span class="prec">precipitiation: 0%</span>
+            <span class="humd">Humidity: 35%</span>
+            <span class="wind2">Wind: 10km/h</span>
+        </div>
+    </h2>
+
+    <h3>
+        <i class="fas fa-wind wind">Windy</i>
+    </h3>
+    <div class="float-left">
+        <span class="temperature" id="temperature"></span>
+        <a href="#" class="celsius" id="celsius">C°</a>|
+        <a href="#" class="fahrenheit" id="fahrenheit">F°</a>
+        <span class="degrees">Temperature</span>
+    </div>
+</body>
+<script src="src/app.js"></script>
+
+</html>

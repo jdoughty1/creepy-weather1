@@ -1,0 +1,109 @@
+h1 {
+  font-family: "Creepster", cursive;
+  font-size: 40px;
+  color: rgb(255, 123, 0);
+  padding-top: 25px;
+  padding-left: 15px;
+}
+.color {
+  color: rgb(139, 27, 136);
+  font-size: 20px;
+  font-family: "Creepster", cursive;
+}
+
+h2 {
+  font-family: "Creepster", cursive;
+  font-size: 65px;
+  color: rgb(255, 123, 0);
+  padding-left: 15px;
+}
+
+.celsius {
+  font-family: "Creepster", cursive;
+  font-size: 25px;
+  color: rgb(139, 27, 136);
+  padding-left: 15px;
+}
+
+.fahrenheit {
+  font-family: "Creepster", cursive;
+  font-size: 25px;
+  color: rgb(139, 27, 136);
+  padding-left: 15px;
+}
+
+.temp {
+  font-family: "Creepster", cursive;
+  font-size: 25px;
+  color: rgb(255, 123, 0);
+  padding-left: 15px;
+}
+
+.degrees {
+  font-family: "Creepster", cursive;
+  font-size: 25px;
+  color: rgb(255, 123, 0);
+  padding-left: 15px;
+}
+
+.wind2 {
+  font-family: "Creepster", cursive;
+  font-size: 25px;
+  color: rgb(139, 27, 136);
+  position: relative;
+  left: 0px;
+  top: 115px;
+}
+
+.prec {
+  font-family: "Creepster", cursive;
+  font-size: 25px;
+  color: rgb(139, 27, 136);
+  position: relative;
+  left: 335px;
+  top: 55px;
+}
+
+.humd {
+  font-family: "Creepster", cursive;
+  font-size: 25px;
+  color: rgb(255, 123, 0);
+  position: relative;
+  left: 145px;
+  top: 86px;
+}
+
+.wind {
+  font-family: "Creepster", cursive;
+  font-size: 55px;
+  color: rgb(139, 27, 136);
+}
+
+.row {
+  padding-top: 25px;
+  padding-left: 15px;
+}
+
+.cat {
+  width: 200px;
+}
+
+.creepy-search {
+  font-family: "Creepster", cursive;
+  color: hsl(0, 87%, 50%);
+  padding-top: 15px;
+}
+.date {
+  color: rgb(255, 123, 0);
+  font-size: 20px;
+  font-family: "Creepster", cursive;
+}
+
+body {
+  border: 4px solid #dadde1;
+  padding: 25px;
+  margin: 20px auto;
+  border-radius: 10px;
+  max-width: 600px;
+  color: black;
+}
