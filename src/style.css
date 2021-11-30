@@ -53,7 +53,7 @@ h2 {
   color: rgb(139, 27, 136);
   position: relative;
   left: 0px;
-  top: 115px;
+  top: 0px;
 }
 
 .prec {
@@ -62,7 +62,7 @@ h2 {
   color: rgb(139, 27, 136);
   position: relative;
   left: 335px;
-  top: 55px;
+  top: 0px;
   margin-bottom: 0;
 }
 
