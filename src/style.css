@@ -49,16 +49,15 @@ h2 {
 
 .wind2 {
   font-family: "Creepster", cursive;
-  font-size: 25px;
-  color: rgb(139, 27, 136);
-  position: relative;
-  left: 0px;
+  font-size: 20px;
+  color: rgb(255, 123, 0);
   margin-bottom: 0;
+  margin-left: 25;
 }
 
 .prec {
   font-family: "Creepster", cursive;
-  font-size: 25px;
+  font-size: 20px;
   color: rgb(139, 27, 136);
   margin-right: 25;
   margin-bottom: 0;
@@ -66,7 +65,7 @@ h2 {
 
 .humd {
   font-family: "Creepster", cursive;
-  font-size: 25px;
+  font-size: 20px;
   color: rgb(255, 123, 0);
   margin-right: 25;
   margin-bottom: 0;
