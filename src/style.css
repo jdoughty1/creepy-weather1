@@ -19,20 +19,6 @@ h2 {
   padding-left: 15px;
 }
 
-.celsius {
-  font-family: "Creepster", cursive;
-  font-size: 25px;
-  color: rgb(139, 27, 136);
-  padding-left: 15px;
-}
-
-.fahrenheit {
-  font-family: "Creepster", cursive;
-  font-size: 25px;
-  color: rgb(139, 27, 136);
-  padding-left: 15px;
-}
-
 .temp {
   font-family: "Creepster", cursive;
   font-size: 25px;
@@ -69,19 +55,6 @@ h2 {
   color: rgb(255, 123, 0);
   margin-right: 25;
   margin-bottom: 0;
-}
-
-.wind {
-  font-family: "Creepster", cursive;
-  font-size: 55px;
-  color: rgb(255, 123, 0);
-  margin-bottom: 0;
-  margin-right: 25;
-}
-
-.row {
-  padding-top: 25px;
-  padding-left: 15px;
 }
 
 .cat {
