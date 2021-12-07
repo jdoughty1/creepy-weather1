@@ -60,7 +60,7 @@ h2 {
   font-family: "Creepster", cursive;
   font-size: 25px;
   color: rgb(139, 27, 136);
-  position: relative;
+  margin-right: 25;
   margin-bottom: 0;
 }
 
@@ -68,15 +68,16 @@ h2 {
   font-family: "Creepster", cursive;
   font-size: 25px;
   color: rgb(255, 123, 0);
-  position: relative;
+  margin-right: 25;
   margin-bottom: 0;
 }
 
 .wind {
   font-family: "Creepster", cursive;
   font-size: 55px;
-  color: rgb(139, 27, 136);
+  color: rgb(255, 123, 0);
   margin-bottom: 0;
+  margin-right: 25;
 }
 
 .row {
