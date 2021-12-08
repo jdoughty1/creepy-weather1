@@ -66,6 +66,9 @@ h2 {
   color: hsl(0, 87%, 50%);
   padding-top: 15px;
 }
+.number {
+  font-size: "35";
+}
 .date {
   color: rgb(139, 27, 136);
   font-size: 30px;
