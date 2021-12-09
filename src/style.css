@@ -45,7 +45,7 @@ h2 {
 .prec {
   font-family: "Creepster", cursive;
   font-size: 20px;
-  color: rgb(139, 27, 136);
+  color: rgb(58, 2, 56);
   margin-right: 25;
   margin-bottom: 0;
 }
@@ -69,10 +69,10 @@ h2 {
 }
 .number {
   font-size: 35px;
-  color: rgb(139, 27, 136);
+  color: rgb(58, 2, 56);
 }
 .date {
-  color: rgb(139, 27, 136);
+  color: rgb(58, 2, 56);
   font-size: 15px;
   font-family: "Creepster", cursive;
 }
@@ -86,7 +86,7 @@ body {
   color: black;
 }
 .units {
-  color: rgb(139, 27, 136);
+  color: rgb(58, 2, 56);
   font-size: 20px;
   font-family: "Creepster", cursive;
 }
