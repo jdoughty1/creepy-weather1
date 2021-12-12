@@ -69,10 +69,10 @@ h2 {
 }
 .number {
   font-size: 35px;
-  color: rgb(58, 2, 56);
+  color: rgb(38, 7, 46);
 }
 .date {
-  color: rgb(58, 2, 56);
+  color: rgb(38, 7, 46));
   font-size: 15px;
   font-family: "Creepster", cursive;
 }
@@ -86,7 +86,7 @@ body {
   color: black;
 }
 .units {
-  color: rgb(58, 2, 56);
+  color: rgb(38, 7, 46);
   font-size: 20px;
   font-family: "Creepster", cursive;
 }
