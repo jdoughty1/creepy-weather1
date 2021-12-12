@@ -13,9 +13,15 @@ h1 {
   font-family: "Creepster", cursive;
 }
 
-h2 {
+.c-link {
   font-family: "Creepster", cursive;
-  font-size: 65px;
+  font-size: 20px;
+  color: rgb(38, 7, 46);
+  padding-left: 15px;
+}
+
+.f-link{ font-family: "Creepster", cursive;
+  font-size: 20px;
   color: rgb(255, 123, 0);
   padding-left: 15px;
 }
