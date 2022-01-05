@@ -23,7 +23,7 @@ h1 {
 .f-link{ font-family: "Creepster", cursive;
   font-size: 20px;
   color: rgb(255, 123, 0);
-  padding-left: 15px;
+
 }
 
 .temp {
@@ -64,10 +64,6 @@ h1 {
   margin-bottom: 0;
 }
 
-.cat {
-  width: 200px;
-}
-
 .creepy-search {
   font-family: "Creepster", cursive;
   color: hsl(0, 87%, 50%);
@@ -83,13 +79,6 @@ h1 {
   font-family: "Creepster", cursive;
 }
 
-body {
-  border: 4px solid #dadde1;
-  padding: 25px;
-  margin: 20px auto;
-  border-radius: 10px;
-  max-width: 600px;
-  color: black;
 }
 .units {
   color: rgb(38, 7, 46);
