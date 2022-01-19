@@ -15,6 +15,8 @@
 
     <script src="https://kit.fontawesome.com/b327b97757.js" crossorigin="anonymous"></script>
 
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
     <link rel="stylesheet" href="src/style.css" />
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
@@ -22,64 +24,58 @@
 </head>
 
 <body class="color">
-
     <div class="container">
         <div class="creepy-weather">
-            <div class="weather-cat-app">
-            <form class="creepy-search" id="creepy-search">
+            <form class="search-form" id="search-form">
                 <div class="row">
                     <div class="col-9" search>
-                        <input type="search" id="city-input" autocomplete="off" placeholder="City Name"
-                            class="form-control" />
+                        <input type="search" placeholder="City Name" autofocus="on" autocomplete="off" id="city-input"
+                            class="form-control shadow-sm" />
                     </div>
 
                     <div class="col-3" submit>
                         <input type="submit" value="search" class="form-control btn btn-primary" />
                     </div>
+                    <div class="col-3">
+                        <button class="btn btn-creepy w-100" id="current-location-button">
+                            Current Location
+                        </button>
+                    </div>
                 </div>
             </form>
+            <h1 id="city">
+                Denver
+            </h1>
+            <ul>
+                <li id="date"></li>
+                <li id="description">
+                    Partly Cloudy
+                </li>
+            </ul>
+            <div class="row">
+                <div class="col-6">
+                    <div class="clearfix">
+                        <img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" alt="Cloudy icon"
+                            class="weather-icon float-left" />
+                        <div class="float-left">
+                            <span class="temperature" id="temperature">20</span><span class="units">
+                                <a href="#" id="celsius-link">°C</a> |
+                                <a href="#" id="fahrenheit-link">°F</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <ul>
+                        <li>Precipitation:<span id="precipitation"> </span> %</li>
+                        <li>Humidity: <span id="humidity"> </span>%</li>
+                        <li>Wind: <span id="wind"> </span> km/h</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
-
-    <h1 id="city">
-    Dallas
-    </h1>
-    <ul>
-        <li class="date" id="date">
-            Monday 11:30 AM
-        </li>
-       
-            
-    </ul>
-  <div class="row">
-      <div class="col-6">
-          <div class="weather-temp">
-              <img src="" alt= sunny class="float-left"/>
-
-<div class="float-left">
-    <strong id="temperature">10</strong>
-    <span class="units">
-
-    <a href="#" id="celsius-link" class="c-link">c°</a> | <a href="#" id="fahrenheit-link" class="f-link"> f°</a>
-   </span>
-</div>
-</div>
-</div>
-
-
-        <div class="col-6">
-            <ul>
-            <li class="humd">Humidity: <span id="humidity"></span>35%</li>
-            <li class="prec">precipitiation:<span id="precipitiation"></span> 0%</li>
-            <li class="wind2">Wind:<span id="wind"></span> 10km/h</li>
-            </ul>
-        </div>
-        </div>
-        
-
-
-    
+    <script src="src/app.js"></script>
 </body>
-<script src="src/app.js"></script>
 
 </html>
