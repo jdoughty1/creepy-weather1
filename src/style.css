@@ -1,7 +1,7 @@
 h1 {
   font-family: "Creepster", cursive;
   font-size: 40px;
-  color: rgb(255, 123, 0);
+  color: rgb(38, 7, 46);
   padding-top: 25px;
   padding-left: 15px;
   margin-bottom: 0;
@@ -83,4 +83,10 @@ li {
 ul {
   margin: 0;
   padding: 0;
+}
+
+.btn btn-creepy {
+  font-family: "Creepster", cursive;
+  font-size: 15px;
+  color: rgb(255, 123, 0);
 }
