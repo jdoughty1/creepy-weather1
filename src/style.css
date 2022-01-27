@@ -13,7 +13,7 @@ h1 {
   height: 64px;
   width: 64px;
 }
-weathertemp strong {
+.weathertemp strong {
   color: rgb(255, 123, 0);
   font-size: 65px;
   font-weight: 400;
