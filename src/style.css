@@ -12,7 +12,10 @@ h1 {
   font-size: 20px;
   font-family: "Creepster", cursive;
 }
-
+#city {
+  color: rgb(38, 7, 46);
+  margin: 0;
+}
 .c-link {
   font-family: "Creepster", cursive;
   font-size: 20px;
