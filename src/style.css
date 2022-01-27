@@ -52,16 +52,12 @@ h1 {
   font-family: "Creepster", cursive;
   font-size: 20px;
   color: rgb(38, 7, 46);
-  margin-right: 25;
-  margin-bottom: 0;
 }
 
 .humd {
   font-family: "Creepster", cursive;
   font-size: 20px;
   color: rgb(255, 123, 0);
-  margin-right: 25;
-  margin-bottom: 0;
 }
 
 .creepy-search {
@@ -97,6 +93,9 @@ body {
 }
 
 li {
+  font-family: "Creepster", cursive;
+  font-size: 20px;
+  color: rgb(255, 123, 0);
   list-style: none;
   margin: 0;
   padding: 0;
