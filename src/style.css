@@ -5,7 +5,14 @@ h1 {
   padding-top: 25px;
   margin-bottom: 0;
 }
-
+.weatherview {
+  margin-bottom: 20px;
+}
+.weathertemp {
+  margin-right: 20px;
+  height: 64px;
+  width: 64px;
+}
 #city {
   color: rgb(38, 7, 46);
   margin: 0;
