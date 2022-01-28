@@ -22,24 +22,21 @@
   let day = days[dayIndex];
 
   return `${day} ${hours}:${minutes}`;
-}
+
 
 function displayWeatherCondition(response) {
   document.querySelector("#city").innerHTML = response.data.name;
   document.querySelector("#temperature").innerHTML = Math.round(
-    response.data.main.temp
-  );
+    response.data.main.temp);
 
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
   document.querySelector("#wind").innerHTML = Math.round(
-    response.data.wind.speed
-  );
+    response.data.wind.speed);
   document.querySelector("#description").innerHTML =
     response.data.weather[0].main;
 
   document.querySelector("#precipitation").innerHtml = Math.round(
-    response.data.main.precipitation
-  );
+    response.data.main.precipitation);
 }
 
 function searchCity(city) {
@@ -87,4 +84,5 @@ searchForm.addEventListener("submit", handleSubmit);
 let currentLocationButton = document.querySelector("#current-location-button");
 currentLocationButton.addEventListener("click", getCurrentLocation);
 
-searchCity("Denver");
+searchCity("Denver");}
+
