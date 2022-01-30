@@ -29,6 +29,7 @@ function displayTemperature(response) {
   let windElement = document.querySelector("#wind");
   let precipitationElement = document.querySelector("#precipitation");
   let dateElement = document.querySelector("#date");
+let iconElement = document.querySelector("#icon");
 
   temperatureElement.innerHtml = Math.round(response.data.main.temp);
   cityElement.innerHTML = response.data.name;
@@ -37,6 +38,10 @@ function displayTemperature(response) {
   windElement.innerHtml = Math.round(response.data.wind.speed);
   precipitationElement.innerHtml = response.data.main.precipitation;
   dateElement.innerHtml = formatDate(response.data.dt * 1000);
+  iconElement.setAttribute("src", `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
+  iconElement.setAttribute("alt", response.data.weather[0].description);
+
+
 }
 let apiKey = "efb9685e5e87bbfea508cb52e9192f88";
 let city = "denver";
