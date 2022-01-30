@@ -86,3 +86,10 @@ currentLocationButton.addEventListener("click", getCurrentLocation);
 
 searchCity("Denver");}
 
+function displayTemerature(response){
+  console.log(response.data.main.temp);
+  let temperatureElement = document.querySelector("#temperature");
+  temperatureElement.innerHTML = math.round (response.data.main.temp);
+
+}
+
