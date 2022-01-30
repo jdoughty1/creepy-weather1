@@ -29,7 +29,7 @@ function displayTemperature(response) {
   let windElement = document.querySelector("#wind");
   let precipitationElement = document.querySelector("#precipitation");
   let dateElement = document.querySelector("#date");
-let iconElement = document.querySelector("#icon");
+  let iconElement = document.querySelector("#icon");
 
   temperatureElement.innerHtml = Math.round(response.data.main.temp);
   cityElement.innerHTML = response.data.name;
@@ -38,17 +38,15 @@ let iconElement = document.querySelector("#icon");
   windElement.innerHtml = Math.round(response.data.wind.speed);
   precipitationElement.innerHtml = response.data.main.precipitation;
   dateElement.innerHtml = formatDate(response.data.dt * 1000);
-  iconElement.setAttribute("src", `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
+  iconElement.setAttribute("src",
+    `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
   iconElement.setAttribute("alt", response.data.weather[0].description);
-
-
 }
 function search(city) {
   let apiKey = "efb9685e5e87bbfea508cb52e9192f88";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayTemperature);
-
-
 }
 
 function handleSubmit(event) {
@@ -57,8 +55,7 @@ function handleSubmit(event) {
   search(cityInputElement.value);
 }
 
-
 search("denver");
 
 let form = document.querySelector("#search-form");
-form.addEventListener("submit, handleSubmit");
+form.addEventListener("submit", handleSubmit);
