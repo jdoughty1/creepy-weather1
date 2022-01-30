@@ -45,15 +45,14 @@ let iconElement = document.querySelector("#icon");
 }
 function search(city) {
   let apiKey = "efb9685e5e87bbfea508cb52e9192f88";
-
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-
   axios.get(apiUrl).then(displayTemperature);
 
 
 }
 
-function handleSubmit(event) {event.preventDefault();
+function handleSubmit(event) {
+  event.preventDefault();
   let cityInputElement = document.querySelector("#city-input");
   search(cityInputElement.value);
 }
@@ -61,6 +60,5 @@ function handleSubmit(event) {event.preventDefault();
 
 search("denver");
 
-let form = Document.querySelector("sesrch-form");
+let form = document.querySelector("#search-form");
 form.addEventListener("submit, handleSubmit");
-//fix
