@@ -42,6 +42,8 @@ function displayTemperature(response) {
     `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
+
+  celsiusTemperature = response.data.main.temp;
 }
 function search(city) {
   let apiKey = "efb9685e5e87bbfea508cb52e9192f88";
@@ -55,7 +57,35 @@ function handleSubmit(event) {
   search(cityInputElement.value);
 }
 
-search("denver");
+function displayFahrenheitTemperature(event){
+event.preventDefault();
+  let  fahrenheitTemperature= (celsiusTemperature *9) / 5 + 32;
+ // remove the active class from the celsius link and add to fehrenheit link
+ celsiusLink.classList.remove("active");
+ fahrenheitLink.classList.add("active");
+ let temperatureElement = document.querySelector("#temperature");
+ temperatureElement.innerHtml = Math.round (fahrenheitTemperature);
+}
+
+function displayCelsiusTemperature(event){
+event.preventDefault();
+ celsiusLink.classList.remove("active");
+ fahrenheitLink.classList.add("active");
+ let temperatureElement = document.querySelector("#temperature");
+ temperatureElement.innerHtml = Math.round (celsiusTemperature);
+}
+
+
+let celsiusTemperature = null;
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
+
+
+let fahrenheitLink = document.querySelector("#fahrenheit-link");
+fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
+
+let celsiusLink = document.querySelector("#celsius-link");
+celsiusLink.addEventListener("click", displayCelsiusTemperature);
+
+search("denver");

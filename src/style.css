@@ -26,6 +26,15 @@ h1 {
   position: relative;
   top: -34px;
 }
+.weathertemp .active {
+  color: rgb(34, 8, 58);
+  cursor: default;
+}
+
+.weathertemp .active:hover {
+  text-decoration: none;
+}
+
 #city {
   color: rgb(38, 7, 46);
   margin: 0;
