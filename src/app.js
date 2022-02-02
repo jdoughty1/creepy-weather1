@@ -21,6 +21,11 @@ function formatDate(timestamp) {
   return `${day} ${hours}:${minutes}`;
 }
 
+function displayForecast{
+  let forecastElement =document.querySelector("#creepy-forecast");
+
+  forecastElement.innerHTML ="creepy-forecast";
+}
 function displayTemperature(response) {
   let temperatureElement = document.querySelector("#temperature");
   let cityElement = document.querySelector("#city");
@@ -92,3 +97,4 @@ let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 search("Denver");
+displayForecast();
