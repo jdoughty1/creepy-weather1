@@ -34,6 +34,23 @@ h1 {
 .weathertemp .active:hover {
   text-decoration: none;
 }
+.creepy-forecast {
+  margin-top: 20px;
+  text-align: center;
+  color: rgb(34, 8, 58);
+}
+
+.creepy-forecast-date {
+  font-size: 16px;
+  opacity: 0.5;
+}
+
+.creepy-forecast-temp-min {
+  opacity: 0.5;
+}
+.creepy-forecast-temp {
+  font-size: 13px;
+}
 
 #city {
   color: rgb(38, 7, 46);
