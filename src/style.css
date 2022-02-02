@@ -1,7 +1,7 @@
 h1 {
   font-family: "Creepster", cursive;
   font-size: 40px;
-  color: rgb(38, 7, 46);
+  color: rgb(47, 13, 80);
   padding-top: 25px;
   margin-bottom: 0;
 }
@@ -20,14 +20,14 @@ h1 {
   line-height: 1;
 }
 .weathertemp .units {
-  color: rgb(38, 7, 46);
+  color: rgb(47, 13, 80);
   font-size: 20px;
   font-family: "Creepster", cursive;
   position: relative;
   top: -34px;
 }
 .weathertemp .active {
-  color: rgb(34, 8, 58);
+  color: rgb(47, 13, 80);
   cursor: default;
 }
 
@@ -35,13 +35,13 @@ h1 {
   text-decoration: none;
 }
 .creepy-forecast {
-  margin-top: 30px;
+  margin-top: 40px;
   text-align: center;
-  color: rgb(34, 8, 58);
+  color: rgb(47, 13, 80);
 }
 
 .creepy-forecast-date {
-  font-size: 20px;
+  font-size: 30px;
   opacity: 0.5;
 }
 
@@ -49,17 +49,17 @@ h1 {
   opacity: 0.5;
 }
 .creepy-forecast-temp {
-  font-size: 20px;
+  font-size: 30px;
 }
 
 #city {
-  color: rgb(38, 7, 46);
+  color: rgb(47, 13, 80);
   margin: 0;
 }
 .c-link {
   font-family: "Creepster", cursive;
   font-size: 20px;
-  color: rgb(38, 7, 46);
+  color: rgb(47, 13, 80);
   padding-left: 15px;
 }
 
@@ -85,15 +85,15 @@ h1 {
 
 .creepy-search {
   font-family: "Creepster", cursive;
-  color: hsl(0, 87%, 50%);
+  color: rgb(47, 13, 80);
   padding-top: 15px;
 }
 .number {
   font-size: 35px;
-  color: rgb(38, 7, 46);
+  color: rgb(47, 13, 80);
 }
 .date {
-  color: rgb(38, 7, 46);
+  color: rgb(47, 13, 80);
   font-size: 15px;
   font-family: "Creepster", cursive;
 }
