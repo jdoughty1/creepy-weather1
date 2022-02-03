@@ -21,11 +21,34 @@ function formatDate(timestamp) {
   return `${day} ${hours}:${minutes}`;
 }
 
-function displayForecast{
-  let forecastElement =document.querySelector("#creepy-forecast");
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  let days = ["thu", "fri", "sat", "sun"];
 
-  forecastElement.innerHTML ="creepy-forecast";
-}
+  let forecastHTML = ` <div class="row">`;
+  days.foreach(function (day) {
+    forecastHTML =
+    forecastHTML +
+    
+ `<div class="col-2">
+    <div class="creepy-forecast-date">${day}</div>
+    <img
+      src="https://openweathermap.org/img/wn/50d@2x.png"
+      alt=""
+      width="42"
+    />
+    <div class="creepy-forecast-temp">
+      <span class="creepy-forecast-temp-max">18°</span>
+      <span class="creepy-forecast-temp-min">12°</span>
+    </div>
+  </div>
+</div>`;
+});
+
+forecastHTML =forecastHTML + `</div>`;
+forecastElement.innerHTML = forecastHTML;
+console.log(forecastHTML);
+  }
 function displayTemperature(response) {
   let temperatureElement = document.querySelector("#temperature");
   let cityElement = document.querySelector("#city");
@@ -36,21 +59,20 @@ function displayTemperature(response) {
   let dateElement = document.querySelector("#date");
   let iconElement = document.querySelector("#icon");
 
-   celsiusTemperature = response.data.main.temp;
+  celsiusTemperature = response.data.main.temp;
 
-  temperatureElement.innerHTML = Math.round( celsiusTemperature);
+  temperatureElement.innerHTML = Math.round(celsiusTemperature);
   cityElement.innerHTML = response.data.name;
   descriptionElement.innerHTML = response.data.weather[0].description;
   humidityElement.innerHTML = response.data.main.humidity;
   windElement.innerHTML = Math.round(response.data.wind.speed);
   precipitationElement.innerHTML = response.data.main.precipitation;
   dateElement.innerHTML = formatDate(response.data.dt * 1000);
-  iconElement.setAttribute("src",
+  iconElement.setAttribute(
+    "src",
     `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
-
- 
 }
 function search(city) {
   let apiKey = "efb9685e5e87bbfea508cb52e9192f88";
@@ -64,31 +86,29 @@ function handleSubmit(event) {
   search(cityInputElement.value);
 }
 
-function displayFahrenheitTemperature(event){
-event.preventDefault();
-let temperatureElement = document.querySelector("#temperature");
-  
- // remove the active class from the celsius link and add to fehrenheit link
- celsiusLink.classList.remove("active");
- fahrenheitLink.classList.add("active");
- let  fahrenheitTemperature= (celsiusTemperature *9) / 5 + 32;
- temperatureElement.innerHTML = Math.round (fahrenheitTemperature);
+function displayFahrenheitTemperature(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#temperature");
+
+  // remove the active class from the celsius link and add to fehrenheit link
+  celsiusLink.classList.remove("active");
+  fahrenheitLink.classList.add("active");
+  let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
+  temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
 }
 
-function displayCelsiusTemperature(event){
-event.preventDefault();
- celsiusLink.classList.remove("active");
- fahrenheitLink.classList.add("active");
- let temperatureElement = document.querySelector("#temperature");
- temperatureElement.innerHTML = Math.round (celsiusTemperature);
+function displayCelsiusTemperature(event) {
+  event.preventDefault();
+  celsiusLink.classList.remove("active");
+  fahrenheitLink.classList.add("active");
+  let temperatureElement = document.querySelector("#temperature");
+  temperatureElement.innerHTML = Math.round(celsiusTemperature);
 }
-
 
 let celsiusTemperature = null;
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
-
 
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
