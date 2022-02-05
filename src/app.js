@@ -48,7 +48,7 @@ function displayForecast(response) {
         />
     <div class="creepy-forecast-temp">
       <span class="creepy-forecast-temp-max">${Math.round(forecastDay.temp.max)}°</span>
-      <span class="creepy-forecast-temp-min">${Math.round(forecastDay.temp.mn)}°</span>
+      <span class="creepy-forecast-temp-min">${Math.round(forecastDay.temp.min)}°</span>
     </div>
   </div>`;}
   });
