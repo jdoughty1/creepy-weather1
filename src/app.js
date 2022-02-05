@@ -35,14 +35,14 @@ function displayForecast(response) {
   
 
   let forecastHTML = `<div class="row">`;
-  days.forEach(function (forecastDay,index) {
+  forecast.forEach(function (forecastDay,index) {
     if (index < 6) {
     forecastHTML =
       forecastHTML +
       `<div class="col-2">
-    <div class="creepy-forecast-date">${day}</div>
+    <div class="creepy-forecast-date">${forecastDay.dt}</div>
     <img
-          src="http://openweathermap.org/img/wn/50d@2x.png"
+          src="http://openweathermap.org/img/wn/${forecastDay.weather[0].icon}@2x.png"
           alt=""
           width="42"
         />
