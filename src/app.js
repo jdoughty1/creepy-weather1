@@ -81,7 +81,7 @@ function displayTemperature(response) {
   descriptionElement.innerHTML = response.data.weather[0].description;
   humidityElement.innerHTML = response.data.main.humidity;
   windElement.innerHTML = Math.round(response.data.wind.speed);
-  precipitationElement.innerHTML = Math.round( response.data.precipitation);
+  precipitationElement.innerHTML = Math.round( response.data);
   dateElement.innerHTML = formatDate(response.data.dt * 1000);
   iconElement.setAttribute(
     "src",
@@ -110,7 +110,7 @@ function displayFahrenheitTemperature(event) {
   // remove the active class from the celsius link and add to fehrenheit link
   celsiusLink.classList.remove("active");
   fahrenheitLink.classList.add("active");
- let temperatureElement = document.querySelector("#temperature");
+  let fahrenheitTemperature = (fahrenheitTemperature (-32) / 1.8);
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
 }
 
@@ -118,8 +118,7 @@ function displayCelsiusTemperature(event) {
   event.preventDefault();
   celsiusLink.classList.remove("active");
   fahrenheitLink.classList.add("active");
-   let celsuisTemperature = (fahrenheitTemperature (-32) / 1.8);
-  
+  let temperatureElement = document.querySelector("#temperature");
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
 }
 
