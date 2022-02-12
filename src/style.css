@@ -21,7 +21,7 @@ h1 {
 }
 .weathertemp .units {
   color: rgb(47, 13, 80);
-  font-size: 20px;
+  font-size: 30px;
   font-family: "Creepster", cursive;
   position: relative;
   top: -34px;
@@ -34,16 +34,7 @@ h1 {
 .weathertemp .active:hover {
   text-decoration: none;
 }
-.wethertemp .btn{
-  font-family: "Creepster", cursive;
-  font-weight: 700;
-  font-size: 16px;
-  padding: 15px 0;
-  border: none;
-  height: 50px;
-  color: rgb(53, 8, 99);
-}
-}
+
 .creepy-forecast {
   margin-top: 35px;
   text-align: center;
