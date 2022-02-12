@@ -20,7 +20,7 @@ function formatDate(timestamp) {
   let day = days[date.getDay()];
   return `${day} ${hours}:${minutes}`;
 }
-var yyyy = today. getFullYear(); today = mm + '/' + dd + '/' + yyyy;
+
 
 function formatDay(timestamp) {
   let date = new Date(timestamp * 1000);
