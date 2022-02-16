@@ -94,7 +94,10 @@ h1 {
 
 body {
   font-family: "Creepster", cursive;
-  color: rgb(255, 20, 147);
+  color: rgb(212, 11, 11);
+}
+.btn-primary {
+  color: rgb(47, 13, 80);
 }
 
 li {
