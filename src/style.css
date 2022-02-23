@@ -101,6 +101,16 @@ body {
 }
 .btn-primary {
   color: rgb(47, 13, 80);
+  background: rgb(255, 123, 0);
+  font-weight: 700;
+  font-size: 16px;
+  padding: 15px 0;
+  border: none;
+  height: 50px;
+  border-radius: 8%;
+  transition: none;
+  box-sizing: border-box;
+}
 }
 
 li {
